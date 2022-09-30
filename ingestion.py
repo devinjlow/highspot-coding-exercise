@@ -62,6 +62,6 @@ def remove_playlist(mixtape, change_obj):
 def output(mixtape, filename):
     # create the file if it doesn't exist then open it in write mode
     with open(filename, 'w+') as output_file:
-        json.dump(mixtape, output_file)
+        json.dump(mixtape, output_file, indent=2)
 
 
